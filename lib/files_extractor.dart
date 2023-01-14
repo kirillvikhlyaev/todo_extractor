@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:file/local.dart' as l;
 import 'package:glob/glob.dart';
 
-Set<String> extractDartFilesFromFolders(Iterable<String> sources) {
+Set<String> extractFilesPath(Iterable<String> sources) {
   try {
     return sources.expand((directory) {
       if (Platform.isWindows) {

@@ -21,7 +21,7 @@ void main(List<String> args) async {
 
   print('|\n| 🧐 Collecting data...');
 
-  final files = extractDartFilesFromFolders(sources);
+  final files = extractFilesPath(sources);
 
   final todos = <Todo>[];
 
