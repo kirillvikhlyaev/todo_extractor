@@ -30,13 +30,13 @@ After that, you can open the generated file and look at your TODOs
 * todo.**txt**
 
 <p align="center">
-<img src="assets/demo_txt.PNG" alt="theory" width="60%"/>
+<img src="assets/demo_txt.PNG" alt="theory" width="80%"/>
 </p>
 
 * todo.**md**
 
 <p align="center">
-<img src="assets/demo_md.PNG" alt="theory" width="60%"/>
+<img src="assets/demo_md.PNG" alt="theory" width="80%"/>
 </p>
 
 ## What are the advantages of MD file?
