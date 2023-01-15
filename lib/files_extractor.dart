@@ -21,6 +21,7 @@ Set<String> extractFilesPath(Iterable<String> sources) {
       }
     }).toSet();
   } catch (e) {
+    print('|\n| ❌\tData collection failed');
     rethrow;
   }
 }
