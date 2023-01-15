@@ -6,16 +6,15 @@ class Todo {
   Todo({this.content, this.fileName, this.line});
 
   void addContent(String newContent) {
-    content = '$content\n$newContent';
+    content = '$content, $newContent';
   }
 
   String prepared(bool isMD) {
     if (isMD) {
-      return '**[$fileName]($fileName): $line**\n$content\n\n';
+      return '| **[$fileName]($fileName): $line** | $content |\n';
     } else {
       return '$fileName:$line\n$content\n\n';
     }
-    
   }
 
   @override

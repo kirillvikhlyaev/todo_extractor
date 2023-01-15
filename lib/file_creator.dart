@@ -12,9 +12,13 @@ Future<void> createFileAndWriteData(List<Todo> todos, String fileName) async {
     var forWriting = '';
 
     if (isMD) {
-      forWriting += '#TODO list\n';
+      forWriting += '# TODO list\n\n';
 
       forWriting += '*${formattedDate()}*\n\n';
+
+      forWriting += '| FILE:LINE | TODO |\n';
+
+      forWriting += '|---------- | ---- |\n';
     }
 
     for (final todo in todos) {
@@ -25,9 +29,9 @@ Future<void> createFileAndWriteData(List<Todo> todos, String fileName) async {
     final sink = file.openWrite()..write(forWriting);
     await sink.flush();
     await sink.close();
-    print('|\n| ✔️ Data collection completed successfully.');
+    print('|\n| ✔️\tData collection completed successfully.');
   } catch (e) {
-    print('|\n| ❌ Data collection failed');
+    print('|\n| ❌\tData collection failed');
     rethrow;
   }
 }

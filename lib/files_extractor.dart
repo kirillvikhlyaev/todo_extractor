@@ -7,8 +7,8 @@ Set<String> extractFilesPath(Iterable<String> sources) {
   try {
     return sources.expand((directory) {
       if (Platform.isWindows) {
-        return Directory('$directory\\').listSync(recursive: true).whereType<File>().map((entity) {
-          return entity.path;
+        return Directory('$directory\\').listSync(recursive: true).whereType<File>().map((file) {
+          return file.path;
         });
       } else {
         return Glob('$directory/**.dart')
@@ -17,7 +17,7 @@ Set<String> extractFilesPath(Iterable<String> sources) {
               followLinks: false,
             )
             .whereType<File>()
-            .map((entity) => entity.path);
+            .map((file) => file.path);
       }
     }).toSet();
   } catch (e) {
