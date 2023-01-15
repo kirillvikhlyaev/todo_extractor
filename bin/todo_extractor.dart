@@ -9,7 +9,7 @@ import 'package:todo_extractor/model/todo.dart';
 import 'package:todo_extractor/todo_fetcher.dart';
 
 void main(List<String> args) async {
-  print('| TODO_EXTRACTOR v0.0.1\n|');
+  print('| TODO_EXTRACTOR v1.0.0\n|');
   final argParser = ArgParser();
   argParser.addMultiOption('sources',
       abbr: 's', callback: (sources) => print('| Sourse: $sources'));
