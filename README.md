@@ -30,13 +30,13 @@ After that, you can open the generated file and look at your TODOs
 * todo.**txt**
 
 <p align="center">
-<img src="assets/demo_txt.PNG" alt="theory" width="80%"/>
+    <img src="https://github.com/kirillvikhlyaev/todo_extractor/blob/main/assets/demo_txt.PNG" alt="theory" width="80%"/>
 </p>
 
 * todo.**md**
 
 <p align="center">
-<img src="assets/demo_md.PNG" alt="theory" width="80%"/>
+    <img src="https://github.com/kirillvikhlyaev/todo_extractor/blob/main/assets/demo_md.PNG" alt="theory" width="80%"/>
 </p>
 
 > ⚠️ To fetch TODO, you need the line to start with "// TODO:"
