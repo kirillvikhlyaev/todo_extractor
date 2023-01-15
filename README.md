@@ -39,6 +39,8 @@ After that, you can open the generated file and look at your TODOs
 <img src="assets/demo_md.PNG" alt="theory" width="80%"/>
 </p>
 
+> ⚠️ To fetch TODO, you need the line to start with "// TODO:"
+
 ## What are the advantages of MD file?
 
 1. A table is generated in the md file, where one row is one file, which is convenient for perception
