@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:file/local.dart' as l;
+import 'package:file/local.dart';
 import 'package:glob/glob.dart';
 
 Set<String> extractFilesPath(Iterable<String> sources) {
@@ -13,7 +13,7 @@ Set<String> extractFilesPath(Iterable<String> sources) {
       } else {
         return Glob('$directory/**.dart')
             .listFileSystemSync(
-              const l.LocalFileSystem(),
+              const LocalFileSystem(),
               followLinks: false,
             )
             .whereType<File>()
