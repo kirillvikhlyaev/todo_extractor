@@ -1,5 +1,6 @@
 import 'package:todo_extractor/model/todo.dart';
 
+/// extension on `Future<List<String>>` for fetching TODOs from list
 extension TodoDiscoverer on Future<List<String>> {
   Future<List<Todo>> fetchTodos(String fileName) async {
     final todos = <Todo>[];

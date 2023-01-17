@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:file/local.dart';
 import 'package:glob/glob.dart';
 
+/// Depending on the platform, it runs through the directory from sources and returns all files with the .dart extension
 Set<String> extractFilesPath(Iterable<String> sources) {
   try {
     return sources.expand((directory) {

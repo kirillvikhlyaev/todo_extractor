@@ -1,6 +1,6 @@
 name: todo_extractor
-description: Script for fetch your TODO marks.
-version: 1.0.0
+description: This package will allow you to pull your TODOs into a independent file in the root directory.
+version: 1.0.1
 repository: https://github.com/kirillvikhlyaev/todo_extractor
 
 environment:

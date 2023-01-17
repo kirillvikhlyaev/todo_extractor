@@ -5,6 +5,8 @@ import 'dart:io';
 import 'package:todo_extractor/model/todo.dart';
 import 'package:todo_extractor/utils/date_formatter.dart';
 
+/// Creates a file named from output and fills it with TODO.
+/// If the file extension `.md`, then performs additional formatting
 Future<void> createFileAndWriteData(List<Todo> todos, String fileName) async {
   final isMD = fileName.split('.').last == 'md';
 

@@ -1,3 +1,4 @@
+/// TODO model
 class Todo {
   String? fileName;
   String? line;
@@ -9,6 +10,7 @@ class Todo {
     content = '$content, $newContent';
   }
 
+  /// If output file is MD, that makes a table out of TODO
   String prepared(bool isMD) {
     if (isMD) {
       return '| **[$fileName]($fileName): $line** | $content |\n';

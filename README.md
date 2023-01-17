@@ -1,6 +1,6 @@
 # TODO Extractor
 
-[![pub package](https://img.shields.io/badge/pub-1.0.0-blue.svg)](https://pub.dev/packages/todo_extractor)
+[![pub package](https://img.shields.io/badge/pub-1.0.1-blue.svg)](https://pub.dev/packages/todo_extractor)
 
 Script for fetch your TODO marks
 
