@@ -12,7 +12,7 @@ You need to add this package in `pubspec.yaml` and run `flutter pub get` in term
 
 ```yaml
 dependencies:
-    todo_extractor: ^1.0.0
+    todo_extractor: ^1.0.1
 ```
 
 ## How to use it?
