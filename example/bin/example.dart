@@ -11,4 +11,4 @@ void main(List<String> arguments) {
   // * subtraction
 }
 
-// TODO: Get numbers from args with https://pub.dev/packages/args  
+// TODO: Get numbers from args with https://pub.dev/packages/args

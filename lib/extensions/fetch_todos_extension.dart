@@ -16,13 +16,15 @@ extension TodoDiscoverer on Future<List<String>> {
 
           todo.line = (iterableElements.indexOf(element) + 1).toString();
 
-          final isLast = iterableElements.indexOf(element) == iterableElements.length - 1;
+          final isLast =
+              iterableElements.indexOf(element) == iterableElements.length - 1;
 
           if (!isLast) {
             var index = iterableElements.indexOf(element) + 1;
 
             while (iterableElements[index].contains('//')) {
-              todo.addContent(iterableElements[index].trim().substring(2).trim());
+              todo.addContent(
+                  iterableElements[index].trim().substring(2).trim());
               index++;
             }
           }

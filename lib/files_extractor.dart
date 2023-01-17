@@ -8,7 +8,10 @@ Set<String> extractFilesPath(Iterable<String> sources) {
   try {
     return sources.expand((directory) {
       if (Platform.isWindows) {
-        return Directory('$directory\\').listSync(recursive: true).whereType<File>().map((file) {
+        return Directory('$directory\\')
+            .listSync(recursive: true)
+            .whereType<File>()
+            .map((file) {
           return file.path;
         });
       } else {
