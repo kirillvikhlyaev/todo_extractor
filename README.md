@@ -20,7 +20,7 @@ dependencies:
 To fetch TODOs (if they exist), write the following command in the terminal:
 
 ```
-    flutter pub todo_extractor -s lib -o todo.txt
+    flutter pub run todo_extractor -s lib -o todo.txt
 ```
 
 * **-s** - sources, it can be a directory or files
