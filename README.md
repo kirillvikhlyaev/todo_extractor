@@ -1,6 +1,6 @@
 # TODO Extractor
 
-[![pub package](https://img.shields.io/badge/pub-1.0.1-blue.svg)](https://pub.dev/packages/todo_extractor)
+[![pub package](https://img.shields.io/badge/pub-1.0.2-blue.svg)](https://pub.dev/packages/todo_extractor)
 
 Script for fetch your TODO marks
 
@@ -12,7 +12,7 @@ You need to add this package in `pubspec.yaml` and run `flutter pub get` in term
 
 ```yaml
 dependencies:
-    todo_extractor: ^1.0.1
+    todo_extractor: ^1.0.2
 ```
 
 ## How to use it?
@@ -31,15 +31,11 @@ After that, you can open the generated file and look at your TODOs
 
 * todo.**txt**
 
-<p align="center">
-    <img src="https://github.com/kirillvikhlyaev/todo_extractor/blob/main/assets/demo_txt.PNG" alt="theory" width="80%"/>
-</p>
+![](https://github.com/kirillvikhlyaev/todo_extractor/blob/main/assets/demo_txt.PNG)
 
 * todo.**md**
 
-<p align="center">
-    <img src="https://github.com/kirillvikhlyaev/todo_extractor/blob/main/assets/demo_md.PNG" alt="theory" width="80%"/>
-</p>
+![](https://github.com/kirillvikhlyaev/todo_extractor/blob/main/assets/demo_md.PNG)
 
 > ⚠️ To fetch TODO, you need the line to start with "// TODO:"
 

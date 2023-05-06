@@ -10,30 +10,25 @@ import 'package:todo_extractor/utils/date_formatter.dart';
 Future<void> createFileAndWriteData(List<Todo> todos, String fileName) async {
   final isMD = fileName.split('.').last == 'md';
 
-  try {
-    var forWriting = '';
+  var forWriting = '';
 
-    if (isMD) {
-      forWriting += '# TODO list\n\n';
+  if (isMD) {
+    forWriting += '# TODO list\n\n';
 
-      forWriting += '*${formattedDate()}*\n\n';
+    forWriting += '*${formattedDate()}*\n\n';
 
-      forWriting += '| FILE:LINE | TODO |\n';
+    forWriting += '| FILE:LINE | TODO |\n';
 
-      forWriting += '|---------- | ---- |\n';
-    }
-
-    for (final todo in todos) {
-      forWriting += todo.prepared(isMD);
-    }
-
-    final file = File(fileName);
-    final sink = file.openWrite()..write(forWriting);
-    await sink.flush();
-    await sink.close();
-    print('|\n| ✔️\tData collection completed successfully.');
-  } catch (e) {
-    print('|\n| ❌\tData collection failed');
-    rethrow;
+    forWriting += '|---------- | ---- |\n';
   }
+
+  for (final todo in todos) {
+    forWriting += todo.prepared(isMD);
+  }
+
+  final file = File(fileName);
+  final sink = file.openWrite()..write(forWriting);
+  await sink.flush();
+  await sink.close();
+  print('|\n| ✔️ Data collection completed successfully.');
 }

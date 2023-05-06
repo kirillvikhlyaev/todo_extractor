@@ -1,6 +1,6 @@
 name: example
 description: Example for todo_extractor.
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: '>=2.18.6 <3.0.0'
